@@ -32,9 +32,9 @@ You can find the project at [🚫URL NAME GOES HERE](🚫copy and paste URL here
 ## Project Overview
 
 
-1️⃣ [Trello Board](🚫add link to trello board here)
+1️⃣ [Trello Board](https://trello.com/b/tMaSFigP/labs-13-stock-price)
 
-1️⃣ [Product Canvas](🚫add link to product canvas here)
+1️⃣ [Product Canvas](https://docs.google.com/document/d/1sErdl9BUTUBLWGJuNJwEJ_Yq9q2HgXrK-gNHbhKKqvA/edit#heading=h.1jaf6eug9n0k)
 
 🚫 Replace lorem ipsum with a description of your project
 
@@ -63,10 +63,10 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 -   Explanatory Variable 5
 
 ### Data Sources
-🚫  Add to or delete souce links as needed for your project
+🚫  Add to or delete source links as needed for your project
 
 
--   [Source 1] (🚫add link to python notebook here)
+-   [Twitter] (https://twitter.com/)
 -   [Source 2] (🚫add link to python notebook here)
 -   [Source 3] (🚫add link to python notebook here)
 -   [Source 4] (🚫add link to python notebook here)
@@ -128,7 +128,7 @@ These contribution guidelines have been adapted from [this good-Contributing.md-
 
 ## Documentation
 
-See [Backend Documentation](_link to your backend readme here_) for details on the backend of our project.
+See [Backend Documentation](https://github.com/labs13-stock-price/backend) for details on the backend of our project.
 
-See [Front End Documentation](_link to your front end readme here_) for details on the front end of our project.
+See [Front End Documentation](https://github.com/labs13-stock-price/frontend) for details on the front end of our project.
 
