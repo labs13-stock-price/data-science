@@ -32,9 +32,9 @@ You can find the project at [🚫URL NAME GOES HERE](🚫copy and paste URL here
 ## Project Overview
 
 
-1️⃣ [Trello Board](https://trello.com/b/tMaSFigP/labs-13-stock-price)
+[Trello Board](https://trello.com/b/tMaSFigP/labs-13-stock-price)
 
-1️⃣ [Product Canvas](https://docs.google.com/document/d/1sErdl9BUTUBLWGJuNJwEJ_Yq9q2HgXrK-gNHbhKKqvA/edit#heading=h.1jaf6eug9n0k)
+[Product Canvas](https://docs.google.com/document/d/1sErdl9BUTUBLWGJuNJwEJ_Yq9q2HgXrK-gNHbhKKqvA/edit#heading=h.1jaf6eug9n0k)
 
 🚫 Replace lorem ipsum with a description of your project
 
@@ -66,7 +66,7 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 🚫  Add to or delete source links as needed for your project
 
 
--   [Twitter] (https://twitter.com/)
+-   [Twitter](https://twitter.com/)
 -   [Source 2] (🚫add link to python notebook here)
 -   [Source 3] (🚫add link to python notebook here)
 -   [Source 4] (🚫add link to python notebook here)
