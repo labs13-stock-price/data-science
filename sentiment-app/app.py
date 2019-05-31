@@ -7,6 +7,7 @@ from datetime import date, datetime, timedelta
 from dateutil import parser
 import os
 import random
+import numpy as np
 
 # TODO setup env vars to connect to Amazon RDS database
 
@@ -40,7 +41,15 @@ def test_sentiment(keyword="", start_date="2019-01-01", end_date="2019-05-31"):
     dates = [
         (d1 + timedelta(days=i)).strftime("%Y-%m-%d") for i in range(delta.days + 1)
     ]
-    sentiment = [round(random.uniform(-1.0, 1.0), 2) for _ in range(delta.days + 1)]
+    sentiment = [round(np.random.normal(0, 0.1), 2)]
+    for i in range(delta.days):
+        # make sure sentiment remains between 0 and 1
+        if sentiment[-1] > 0.95:
+            sentiment.append(0.85)
+        elif sentiment[-1] < -0.95:
+            sentiment.append(-0.85)
+        else:
+            sentiment.append(round(sentiment[-1] + np.random.normal(0, 0.025) + -sentiment[-1] * 0.01, 2))
     return jsonify(status="success", dates=dates, sentiment=sentiment)
 
 
