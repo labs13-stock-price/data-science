@@ -68,7 +68,7 @@ def reddit_sentiment(keyword, start_date="2019-01-01", end_date="2019-05-31"):
     sentiment_dict = dict.fromkeys(dates, 0.0)
 
     sentiment_query = """SELECT date, sentiment from sentiment
-                        WHERE date BETWEEN %s and %s"""
+                        WHERE date BETWEEN %s and %s AND keyword = %s"""
 
     conn = None
 
@@ -79,7 +79,7 @@ def reddit_sentiment(keyword, start_date="2019-01-01", end_date="2019-05-31"):
                           host=HOST)
 
         cursor = conn.cursor()
-        cursor.execute(sentiment_query, (d1, d2))
+        cursor.execute(sentiment_query, (d1, d2, keyword))
         sentiment_records = cursor.fetchall()
         for r in sentiment_records:
             sentiment_dict[r[0].strftime("%Y-%m-%d")] = round(float(r[1]), 2)
