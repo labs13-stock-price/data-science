@@ -21,14 +21,18 @@ import pickle
 import itertools
 from textblob import TextBlob
 import datetime
+from dotenv import load_dotenv
 
+
+# Twitter keys go here
+load_dotenv()
+ckey = os.getenv('ckey')
+csecret = os.getenv('csecret')
+atoken = os.getenv('atoken')
+asecret = os.getenv('asecret')
+
+# Instantiate sentiment analyzer class
 analyzer = SentimentIntensityAnalyzer()
-
-# Twitter keys
-ckey = '1wKYaitEhrElIXVsZKXxyePfW'
-csecret = '5sSg4Kgqk2r5O4d5XxqFiim4gWt6dOiHnJVGlm9wzZt1daqjlP'
-atoken = '1082776925767122944-hcaROCH3H2tP8K9rHC1vgxYImf6rm5'
-asecret = 'fbPhtbtpq1PEK86srvlBwDB6gZGgPfrYboKpJ3aRHUAp7'
 
 """Isolation lever disables automatic transactions, we are disabling thread
    check as we are creating connection here, but we'll be inserting from a
@@ -36,7 +40,6 @@ asecret = 'fbPhtbtpq1PEK86srvlBwDB6gZGgPfrYboKpJ3aRHUAp7'
 
 conn = sqlite3.connect('twitter_wloc.db', isolation_level=None, check_same_thread=False)
 c = conn.cursor()
-
 
 
 us_state_abbrev = {
@@ -283,14 +286,6 @@ while True:   #infinite while loop to listen Twitter API
         auth = OAuthHandler(ckey, csecret)
         auth.set_access_token(atoken, asecret)
         twitterStream = Stream(auth, listener(lock))
-
-        # LOCATIONS are the longitude, latitude coordinate corners for a box that restricts the
-        # geographic area from which you will stream tweets. The first two define the southwest
-        # corner of the box and the second two define the northeast corner of the box.
-        #LOCATIONS = [-124.7771694, 24.520833, -66.947028, 49.384472,        # Contiguous US
-        #             -164.639405, 58.806859, -144.152365, 71.76871,         # Alaska
-        #             -160.161542, 18.776344, -154.641396, 22.878623]        # Hawaii
-
         twitterStream.filter(track=["t"], languages=["en"])      # locations=LOCATIONS
         #twitterStream.filter(stall_warnings=True)
 

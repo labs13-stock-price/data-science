@@ -316,4 +316,4 @@ for css in external_css:
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True, port=8070)
+    app.run_server(debug=True, port=8070) # don't forget to change the port before deploying
