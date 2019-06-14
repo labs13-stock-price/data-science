@@ -7,8 +7,10 @@ from datetime import datetime
 # Reddit API Scraping
 #####################
 
+
 def convert_unix_to_datetime(ts):
     return datetime.utcfromtimestamp(int(ts)).strftime("%Y-%m-%d %H:%M:%S")
+
 
 def get_push_shift_data(query, after, before, sub):
     """
@@ -25,14 +27,14 @@ def get_push_shift_data(query, after, before, sub):
             - json response of search query
     """
     url = (
-            "https://api.pushshift.io/reddit/search/comment/?q="
-            + str(query)
-            + "&size=1000&after="
-            + str(after)
-            + "&before="
-            + str(before)
-            + "&subreddit="
-            + str(sub)
+        "https://api.pushshift.io/reddit/search/comment/?q="
+        + str(query)
+        + "&size=1000&after="
+        + str(after)
+        + "&before="
+        + str(before)
+        + "&subreddit="
+        + str(sub)
     )
     r = requests.get(url)
     data = json.loads(r.text)
@@ -60,10 +62,10 @@ def collect_sub_data(submission):
 
 
 def get_all_push_shift_data(
-        query,
-        after="1451606400",
-        before="1559347200",
-        subs=["stocks", "wallstreetbets", "Trading", "investing"],
+    query,
+    after="1451606400",
+    before="1559347200",
+    subs=["stocks", "wallstreetbets", "Trading", "investing"],
 ):
     """
     Gets comments for a given keyword between two dates
