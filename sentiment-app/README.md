@@ -18,9 +18,19 @@ Example usage
 `http://sentiment-app.pjj2rgg23c.us-east-1.elasticbeanstalk.com/test/keyword/20190501/20190530`
 
 
-### Twitter Endpoint
+### Reddit Endpoint
 
-TO-DO
+This endpoint contains past reddit sentiment data.
+
+`http://sentiment-app.pjj2rgg23c.us-east-1.elasticbeanstalk.com/reddit/<keyword>/<start-date>/<end-date>`
+
+`keyword` corresponds to stock symbols.
+
+`start-date` and `end-date` are used to return a list of dates and random numbers for sentiment
+
+Example usage
+
+`http://sentiment-app.pjj2rgg23c.us-east-1.elasticbeanstalk.com/reddit/AAPL/20190501/20190530`
 
 
 ## Deployment and Testing
