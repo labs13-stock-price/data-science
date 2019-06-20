@@ -107,10 +107,11 @@ def update_graph(n_clicks, stock_ticker, start_date, end_date):
     traces = []
     # Pass each called stock ticker into the API, get data
     for tic in stock_ticker:
-        df = web.DataReader(tic,'iex',start,end)
+        url = f"https://hw3nhrdos1.execute-api.us-east-2.amazonaws.com/api/history/{tic}/{start}/{end}"
+        df = pd.read_json(url)
         # Append each trace to a list so it can be called from n_click
-        traces.append({'open':df.open, 'high':df.high, 'low':df.low,
-                       'close':df.close, 'x':df.index, 'y':df.close,
+        traces.append({'open':df.Open, 'high':df.High, 'low':df.Low,
+                       'close':df.Close, 'x':df.index, 'y':df.Close,
                        'type':'ohlc', 'name':tic})
     fig = {
         'data': traces,
@@ -139,7 +140,7 @@ def update_graph(n_clicks, stock_ticker, start_date, end_date):
     traces = []
     for tic in stock_ticker:
         url = f"http://sentiment-app.pjj2rgg23c.us-east-1.elasticbeanstalk.com\
-/test/{tic}/{start}/{end}"
+/reddit/{tic}/{start}/{end}"
         request = requests.get(url)
         request_json = request.json()
         df_s = pd.DataFrame(request_json,columns=['dates','sentiment'])
@@ -174,8 +175,9 @@ def update_graph(n_clicks, stock_ticker, start_date, end_date):
     end = datetime.strptime(end_date[:10], '%Y-%m-%d')
     traces = []
     for tic in stock_ticker:
-        df = web.DataReader(tic,'iex',start,end)
-        df['Daily Pct. Change'] = (df.close - df.open) / df.open
+        url = f"https://hw3nhrdos1.execute-api.us-east-2.amazonaws.com/api/history/{tic}/{start}/{end}"
+        df = pd.read_json(url)
+        df['Daily Pct. Change'] = (df.Close - df.Open) / df.Open
         traces.append(go.Histogram(x=df['Daily Pct. Change']\
                       .where(df['Daily Pct. Change'] < 0),
                       marker={'color':'red'}, name='negative returns')),
