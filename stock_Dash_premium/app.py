@@ -6,6 +6,7 @@ import dash_html_components as html
 import pandas as pd
 
 app = dash.Dash(__name__)
+server = app.server
 
 df = pd.read_csv('all_stocks.csv').sort_values('stak score')
 df = df[df.Volume > 100000]
@@ -19,6 +20,12 @@ df.set_index('id', inplace=True, drop=False)
 
 
 app.layout = html.Div([
+    html.Img(src='assets/staklogo.png',width=300),
+    html.H1("Interactive data table with visualizations"),
+    html.P("""The stak score is composed with our proprietary\
+    algorithm. It’s based on financials of the specified ticker, full history\
+    risk-profile, technical analysis, and a sentiment analysis.\
+    A stak score below 0 indicates a sell situation, a score above 0 is a buy."""),
     dash_table.DataTable(
         id='datatable-row-ids',
         columns=[
