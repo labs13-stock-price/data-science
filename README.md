@@ -51,18 +51,26 @@ For example, the word "long" is associated with positive sentiment scores in our
 
 ### 2️⃣ Explanatory Variables
 
--   Explanatory Variable 1
+**Sentiment Analysis***
+
+- Social Media Text -> Sentiment
+
+**Financial Data**
+
 -   Explanatory Variable 2
 -   Explanatory Variable 3
 -   Explanatory Variable 4
 -   Explanatory Variable 5
 
 ### Data Sources
-🚫  Add to or delete source links as needed for your project
 
+**Sentiment Analysis**
 
 -   [Twitter](https://twitter.com/)
 -   [Reddit](https://www.reddit.com/)
+
+**Financial Data** 
+
 -   [Source 3] (🚫add link to python notebook here)
 -   [Source 4] (🚫add link to python notebook here)
 -   [Source 5] (🚫add link to python notebook here)
