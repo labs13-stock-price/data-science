@@ -1,29 +1,21 @@
-🚫 Note: All lines that start with 🚫 are instructions and should be deleted before this is posted to your portfolio. This is intended to be a guideline. Feel free to add your own flare to it.
-
-🚫 The numbers 1️⃣ through 5️⃣ next to each item represent the week that part of the docs needs to be comepleted by.  Make sure to delete the numbers by the end of Labs.
-
-🚫 Each student has a required minimum number of meaningful PRs each week per the rubric.  Contributing to docs does NOT count as a PR to meet your weekly requirements.
-
 # Stak
 
-You can find the project at [🚫URL NAME GOES HERE](🚫copy and paste URL here).
+You can find the project at [Stak](https://stock-price-stripe.herokuapp.com/).
 
 ## Contributors
 
-🚫Add contributor info below, make sure add images and edit the social links for each member. Add to or delete these place-holders as needed
 
 |                                       [Dmitriy Kavayazin](https://github.com/DimaKav)                                        |                                       [Derek Shing](https://github.com/derek-shing)                                        |                                       [Zach Angell](https://github.com/zangell44)                                        |                           
 | :-----------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: |
-|                      [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/)                       |                      [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-female.png" width = "200" />](https://github.com/)                       |
+|                      [<img src="https://media.licdn.com/dms/image/C4E03AQHZzRTbNAG5Ig/profile-displayphoto-shrink_800_800/0?e=1567036800&v=beta&t=8ptDa1tD4wL9516Zt_RcPLoIldi3ue2iLu6xNhRfNws" width = "200" />](https://github.com/DimaKav)                       |                      [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/derek-shing)                       | [<img src="https://avatars2.githubusercontent.com/u/42625717?s=460&v=4" width = "200" />](https://github.com/zangell44) |
 |[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/DimaKav)            |          [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/derek-shing)           |            [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/zangell44)             |
-| [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/dkavyazin/) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/zachangell/) |
+| [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/dkavyazin/) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/derek-shing-29321927/) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/zachangell/) |
 
 
 ![MIT](https://img.shields.io/packagist/l/doctrine/orm.svg)
 ![Python 3.8](https://img.shields.io/badge/python-3.6-blue.svg)
 
 ## Project Overview
-
 
 [Trello Board](https://trello.com/b/tMaSFigP/labs-13-stock-price)
 
@@ -32,7 +24,6 @@ You can find the project at [🚫URL NAME GOES HERE](🚫copy and paste URL here
 Stak is a trading platform that integrates sentiment from social media data sources. 
 
 We combine traditional technical trading signals with sentiment analysis, alllowing the user to make more profitable trades.
-
 
 [Deployed Front End](https://stock-price-stripe.herokuapp.com/)
 
@@ -44,13 +35,13 @@ Python
 - NLTK's VaderSentiment Package for Sentiment Analysis
 - Pandas, Numpy, and other packages for data analysis and engineering
 
-AWS
+AWS Infrastructure
 
 - Elastic Beanstalk for Deployment
 - RDS (PostgreSQL)
 - Lambda for automation of daily pipeline
 
-### 2️⃣ Predictions
+### Predictions
 
 **Sentiment Analysis**
 
@@ -90,9 +81,21 @@ For example, the word "long" is associated with positive sentiment scores in our
 
 🚫 List directions on how to connect to the API here
 
-### 3️⃣ How to connect to the data API
+### How to connect to the data API
 
-🚫 List directions on how to connect to the API here
+**Reddit Endpoint**
+
+This endpoint contains past reddit sentiment data.
+
+`http://sentiment-app.pjj2rgg23c.us-east-1.elasticbeanstalk.com/reddit/<keyword>/<start-date>/<end-date>`
+
+`keyword` corresponds to stock symbols.
+
+`start-date` and `end-date` are used to return a list of dates and random numbers for sentiment
+
+Example usage
+
+`http://sentiment-app.pjj2rgg23c.us-east-1.elasticbeanstalk.com/reddit/AAPL/20190501/20190530`
 
 ## Contributing
 
