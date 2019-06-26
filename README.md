@@ -8,14 +8,14 @@
 
 You can find the project at [🚫URL NAME GOES HERE](🚫copy and paste URL here).
 
-## 5️⃣ Contributors
+## Contributors
 
 🚫Add contributor info below, make sure add images and edit the social links for each member. Add to or delete these place-holders as needed
 
 |                                       [Dmitriy Kavayazin](https://github.com/DimaKav)                                        |                                       [Derek Shing](https://github.com/derek-shing)                                        |                                       [Zach Angell](https://github.com/zangell44)                                        |                           
 | :-----------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: |
-|                      [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/)                       |                      [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-female.png" width = "200" />](https://github.com/)                       |                      [<img src="https://avatars2.githubusercontent.com/u/42625717?s=460&v=4" width = "200" />](https://github.com/)                       |     
-|                 [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/)                 |            [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/honda0306)             |           [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/DimaKav)            |          [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/derek-shing)           |            [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/zangell44)             |
+|                      [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/)                       |                      [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-female.png" width = "200" />](https://github.com/)                       |
+|[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/DimaKav)            |          [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/derek-shing)           |            [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/zangell44)             |
 | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/dkavyazin/) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/zachangell/) |
 
 
