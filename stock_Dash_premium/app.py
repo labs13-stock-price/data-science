@@ -8,7 +8,8 @@ import pandas as pd
 app = dash.Dash(__name__)
 server = app.server
 
-df = pd.read_csv('all_stocks.csv').sort_values('stak score')
+url = 'https://bz106i00uh.execute-api.us-east-2.amazonaws.com/api/'
+df = pd.read_json(url).sort_values('stak score')
 df = df[df.Volume > 100000]
 df['stak score'] = df['stak score'].round(2)
 # add an id column and set it as the index
@@ -25,7 +26,8 @@ app.layout = html.Div([
     html.P("""The stak score is composed with our proprietary\
     algorithm. It’s based on financials of the specified ticker, full history\
     risk-profile, technical analysis, and a sentiment analysis.\
-    A stak score below 0 indicates a sell situation, a score above 0 is a buy."""),
+    A stak score below 0 indicates a sell situation, a score above 0 is a buy.
+    The stak score changes at the end of each day to reflect daily market conditions."""),
     dash_table.DataTable(
         id='datatable-row-ids',
         columns=[
