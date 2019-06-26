@@ -62,7 +62,7 @@ For example, the word "long" is associated with positive sentiment scores in our
 
 
 -   [Twitter](https://twitter.com/)
--   [Reddit] (https://www.reddit.com/)
+-   [Reddit](https://www.reddit.com/)
 -   [Source 3] (🚫add link to python notebook here)
 -   [Source 4] (🚫add link to python notebook here)
 -   [Source 5] (🚫add link to python notebook here)
@@ -76,10 +76,6 @@ For example, the word "long" is associated with positive sentiment scores in our
 [Python Notebook 2](🚫add link to python notebook here)
 
 [Python Notebook 3](🚫add link to python notebook here)
-
-### 3️⃣ How to connect to the web API
-
-🚫 List directions on how to connect to the API here
 
 ### How to connect to the data API
 
